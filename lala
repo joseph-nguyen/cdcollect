@@ -1,0 +1,19 @@
+#!/bin/bash
+
+add_records() {
+# Prompt for the initial information
+echo -e "Enter catalog name \c"
+read tmp
+cdcatnum=${tmp%%,*}
+
+echo -e "Enter title \c"
+read tmp
+cdtitle=${tmp%%,*}
+
+echo "The catalog nuber is $cdcatnum"
+echo "The cd title is $cdtitle"
+return 0
+}
+
+add_records
+
